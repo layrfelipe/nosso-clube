@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import Header from "@/components/header"
 import styles from "@/styles/MyDrops.module.scss"
+import DropCardGrid from '@/components/dropCardGrid'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,6 +21,7 @@ export default function MyDrops () {
                 
                 <div className={styles.myDropsWrapper}>
                     <h1>Meus drops</h1>
+                    <DropCardGrid />
                 </div>
             </main>
         </>

@@ -15,7 +15,9 @@ export default function Login () {
                     <input placeholder="Digite aqui sua matrícula"></input>
                 </div>
 
-                <button>Entrar</button>
+                <Link href="/myDrops" className={styles.link}>
+                    <button>Entrar</button>
+                </Link>
             </div>
 
             <div className={styles.newUserLoginFormWrapper}>
