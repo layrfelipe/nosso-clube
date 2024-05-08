@@ -1,18 +1,23 @@
 import styles from "@/styles/Login.module.scss"
 import Link from "next/link"
+import { useState } from "react"
 
 export default function Login () {
+    const [existingUserCPF, setExistingUserCPF] = useState("")
+    const [associatedNumber, setAssociatedNumber] = useState("")
+    const [newUserCPF, setNewUserCPF] = useState("")
+    
     return(
         <div className={styles.loginWrapper}>
             <div className={styles.oldUserLoginFormWrapper}>
                 <div className={styles.inputWrapper}>
                     <span>CPF</span>
-                    <input placeholder="Digite seu CPF"></input>
+                    <input placeholder="Digite seu CPF" value={existingUserCPF} onChange={e => setExistingUserCPF(e.target.value)}></input>
                 </div>
 
                 <div className={styles.inputWrapper}>
                     <span>Matrícula de sócio</span>
-                    <input placeholder="Digite aqui sua matrícula"></input>
+                    <input placeholder="Digite aqui sua matrícula" value={associatedNumber} onChange={e => setAssociatedNumber(e.target.value)}></input>
                 </div>
 
                 <Link href="/myDrops" className={styles.link}>
@@ -26,7 +31,7 @@ export default function Login () {
                 
                 <div className={styles.inputWrapper}>
                     <span>CPF</span>
-                    <input placeholder="Digite seu CPF"></input>
+                    <input placeholder="Digite seu CPF" value={newUserCPF} onChange={e => setNewUserCPF(e.target.value)}></input>
                 </div>
 
                 <Link href="/myDrops" className={styles.link}>

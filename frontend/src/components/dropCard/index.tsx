@@ -1,10 +1,10 @@
 import styles from "@/styles/DropCard.module.scss"
 
-export default function DropCard() {
+export default function DropCard({ imagePath, title }: any) {
     return(
         <div className={styles.dropCardWrapper}>
-            <img src="/shirt.png"/>
-            <h3>50% OFF na Camisa Oficial 2024</h3>
+            <img src={imagePath}/>
+            <h3>{title}</h3>
             <button>Resgatar drop</button>
         </div>
     )
