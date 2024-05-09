@@ -14,10 +14,8 @@ O Nosso Clube é um aplicativo descentralizado que visa incentivar a associaçã
    - Instale o Hardhat e as dependências do projeto executando o comando `yarn install` na pasta `hardhat`.
    - Instale as dependências do frontend executando o comando `npm install` na pasta `nextjs`.
 
-
-
-<!-- ### 2. Teste dos Contratos Inteligentes:
-   - Execute o comando `yarn hardhat test --network hardhat` na pasta `hardhat` para testar  os contratos.
+### 2. Teste dos Contratos Inteligentes:
+   - Execute o comando `npx hardhat test --network hardhat` na pasta `hardhat` para testar  os contratos.
 
 ### 3. Deploy dos Contratos Inteligentes:
    - Configure sua rede de destino no arquivo `hardhat.config.js`.
@@ -27,8 +25,8 @@ O Nosso Clube é um aplicativo descentralizado que visa incentivar a associaçã
    - Execute o comando `npm run dev` na pasta `nextjs` para iniciar o servidor de desenvolvimento do frontend.
 
 ### 5. Utilização do Protocolo ReDigi:
-   - Acesse o frontend através do navegador para interagir com o Protocolo ReDigi.
-   - O frontend ainda em desenvolvimento, oferece uma interface amigável para depositar NFTs, criar tokens ERC20 correspondentes e interagir com as funcionalidades do protocolo. -->
+   - Acesse o frontend através do navegador para interagir com o DApp.
+   - O frontend ainda em desenvolvimento, oferece uma interface simples e prototipada para ver as principais funcionalidades.
 
 ## Autores:
 - [Wlad Mendes](https://github.com/wmendes)
